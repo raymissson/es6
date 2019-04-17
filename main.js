@@ -1,8 +1,12 @@
-// não pode reatribuir um valor a variável
-const a = 1;
-a = 3;
-// mutando
-const usu = {nome: 'Raymison'};
-usu.nome = 'Maklouf';
+function test(x){
+    // pode reatribuir valor
+    let y = 2;
 
-console.log(usu);
+    if(x>5){
+        // reatribuido
+        y = 4;
+        console.log(x,y);
+    }
+}
+
+test(10);

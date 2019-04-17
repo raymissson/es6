@@ -1,13 +1,14 @@
 "use strict";
 
-function _readOnlyError(name) { throw new Error("\"" + name + "\" is read-only"); }
+function test(x) {
+  // pode reatribuir valor
+  var y = 2;
 
-// não pode reatribuir um valor a variável
-var a = 1;
-a = (_readOnlyError("a"), 3); // mutando
+  if (x > 5) {
+    // reatribuido
+    y = 4;
+    console.log(x, y);
+  }
+}
 
-var usu = {
-  nome: 'Raymison'
-};
-usu.nome = 'Maklouf';
-console.log(usu);
+test(10);
