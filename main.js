@@ -1,6 +1,8 @@
-class Matematica{
-    static soma(a,b){
-        return a+ b;
-    }
-}
-console.log(Matematica.soma(1,2));
+// não pode reatribuir um valor a variável
+const a = 1;
+a = 3;
+// mutando
+const usu = {nome: 'Raymison'};
+usu.nome = 'Maklouf';
+
+console.log(usu);
