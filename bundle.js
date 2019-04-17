@@ -1,14 +1,7 @@
 "use strict";
 
-function test(x) {
-  // pode reatribuir valor
-  var y = 2;
-
-  if (x > 5) {
-    // reatribuido
-    y = 4;
-    console.log(x, y);
-  }
-}
-
-test(10);
+var arr = [1, 3, 4, 5, 6];
+var newArr = arr.map(function (item, index) {
+  return item + index;
+});
+console.log(newArr);

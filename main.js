@@ -1,12 +1,8 @@
-function test(x){
-    // pode reatribuir valor
-    let y = 2;
+const arr = [1,3,4,5,6];
 
-    if(x>5){
-        // reatribuido
-        y = 4;
-        console.log(x,y);
-    }
-}
+const newArr = arr.map(function(item, index){
+    return item + index;
 
-test(10);
+});
+
+console.log(newArr);
