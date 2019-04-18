@@ -1,12 +1,3 @@
-// Object Short Syntax
+import soma from './funcoes';
 
-const nome = 'Raymison';
-const idade = 23;
-// sintaxe curta de objeto
-const usuario = {
-    nome,
-    idade,
-    empresa: 'bshare'
-};
-
-console.log(usuario);
+console.log(soma(1,2))
