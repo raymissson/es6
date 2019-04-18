@@ -1,8 +1,11 @@
 const arr = [1,3,4,5,6];
-
-const newArr = arr.map(function(item, index){
-    return item + index;
-
-});
+// diminuir a verbosidadde
+const newArr = arr.map(item=> item *2);
 
 console.log(newArr);
+// retorna uma função
+const teste = () =>{
+    return 'teste';
+}
+
+console.log(teste());
