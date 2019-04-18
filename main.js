@@ -1,7 +1,12 @@
-// template literals
-const nome = 'Diego';
+// Object Short Syntax
+
+const nome = 'Raymison';
 const idade = 23;
+// sintaxe curta de objeto
+const usuario = {
+    nome,
+    idade,
+    empresa: 'bshare'
+};
 
-//console.log('Meu nome é:'+nome+' e tenho: '+idade+' anos');
-
-console.log(`Meu nome é ${nome} e tenho ${idade} anos`);
+console.log(usuario);
